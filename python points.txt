@@ -1,0 +1,27 @@
+1. Notice that the %s token is replaced by whatever I pass to the string after the % symbol.
+
+"Hello %s, my name is %s" % ('john', 'mike') # Hello john, my name is mike".
+If you are using ints instead of string, use %d instead of %s.
+
+name = raw_input("who are you?")
+print "hello %s" % (name,)
+
+2.
+isinstance(variable, datatype) : checks whether variable is of the mentioned datatype
+if isinstance(myint, int) and myint == 20:
+    print("Integer: %d" % myint)
+
+3.
+Using two multiplication symbols makes a power relationship.
+squared = 7 ** 2
+cubed = 2 ** 3
+
+Python also supports multiplying strings to form a string with a repeating sequence:
+lotsofhellos = "hello " * 10
+print(lotsofhellos)
+
+
+Just as in strings, Python supports forming new lists with a repeating sequence using the multiplication operator:
+print([1,2,3] * 3)
+
+This is extended slice syntax. The general form is [start:stop:step].
